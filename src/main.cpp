@@ -104,5 +104,5 @@ extern "C" void app_main()
     i2c_master_init();
 
     // Crea il task per la lettura dell'encoder
-    xTaskCreate((TaskFunction_t)task_read_encoder, "ReadEncoder", 2048, NULL, 5, NULL);
+    xTaskCreate((TaskFunction_t)task_read_encoder, "ReadEncoder", 4096, NULL, 5, NULL);
 }
